@@ -1,0 +1,564 @@
+﻿@import url("https://fonts.googleapis.com/css2?family=Popins:wght@100;300;400;500;600&display=swap");
+:root {
+    --main-color: #4cff00;
+    --primary: grey;
+    --black: #000000;
+    --white: #fff;
+    --bg: #f2f2f2;
+    --light-black: #666;
+}
+
+* {
+    font-family: popins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+}
+
+section {
+    padding: 3rem 9%;
+}
+
+.heading {
+    text-align: center;
+    color: var(--main-color);
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    font-size: 4rem;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    border: .1rem solid var(--main-color);
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.btn:hover {
+    background: var(--main-color);
+    color: var(--white);
+}
+
+
+/*header*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: var(--primary);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 2.2rem;
+    font-weight: bolder;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.header .navbar a {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    color: var(--black);
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+}
+
+#menu {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: var(--main-color);
+    display: none;
+}
+
+
+/*end*/
+
+
+/*home*/
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(image/galaxy.jpg)no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home .content {
+    max-width: 60rem;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.home .content h3 .heading {
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: var(--primary);
+    padding-bottom: 3.5rem;
+}
+
+h3 {
+    color: white;
+    font-size: 30px;
+}
+
+
+/*end*/
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.about .row .content {
+    flex: 1 1 40rem;
+}
+
+.about .row .content h3 {
+    font-size: 3.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    /* Adjusted margin for better spacing */
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: var(--light-black);
+    line-height: 1.8;
+    /* Adjusted line height for better readability */
+}
+
+.about .row .video {
+    flex: 1 1 50%;
+    /* Adjusted width of the image container */
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    /* Rounded corners for the video container */
+}
+
+.about .row .image video {
+    max-width: 100%;
+    /* Set a maximum width to maintain responsiveness */
+    max-height: 20rem;
+    /* Set a maximum height for the video */
+    width: auto;
+    /* Allow the width to adjust based on the aspect ratio */
+    height: auto;
+    /* Allow the height to adjust based on the aspect ratio */
+    display: block;
+    border-radius: 1rem;
+    /* Rounded corners for the video */
+    transition: transform 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+
+/* Add hover effect to the video container */
+
+.about .row .video:hover video {
+    transform: scale(1.05);
+    /* Scale up the video on hover */
+}
+
+
+/*end*/
+
+
+/*services*/
+
+.education {
+    color: grey;
+}
+
+.education .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin-top: 8rem;
+}
+
+.education .box-container .box {
+    text-align: center;
+    padding: 3rem;
+    background: var(--light-black);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    margin-bottom: 8rem;
+}
+
+.education .box-container .box .icon {
+    width: 13rem;
+    height: 13rem;
+    line-height: 13rem;
+    border-radius: 50%;
+    margin: -11rem auto 2rem;
+    border: 1.8rem solid var(--bg);
+}
+
+.education .box-container .box .icon img {
+    width: 5rem;
+    margin-top: 2rem;
+}
+
+.education .box-container .box .content h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: var(--black);
+}
+
+.education .box-container .box .content .line {
+    background: var(--main-color);
+    width: 30%;
+    height: .4rem;
+    margin: 2rem auto;
+    border-radius: 5rem;
+}
+
+.education .box-container .box .content p {
+    font-size: 1.4rem;
+    color: var(--black);
+    line-height: 2;
+    color: white;
+}
+
+.education .box-container .box .content ul {
+    margin: 2rem 0;
+    list-style: none;
+}
+
+.education .box-container .box .content ul li {
+    padding: 1.4rem;
+    color: var(--white);
+    font-size: 20px;
+    text-align: left;
+}
+
+.education .box-container .box .content ul li i {
+    font-size: 1.4rem;
+    columns: var(--white);
+    padding: .5rem;
+    margin-right: 1rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+
+/*end*/
+
+
+/*diet*/
+
+
+/* Additional styles for grid layout */
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.photo-grid img {
+    width: 100%;
+    /* Make sure images fill the grid item */
+    height: 100%;
+    /* Make sure images fill the grid item */
+    object-fit: cover;
+    /* Maintain aspect ratio and cover container */
+    cursor: pointer;
+    /* Add pointer cursor to indicate clickable */
+    transition: transform 0.3s ease;
+    /* Add smooth transition for scaling */
+}
+
+.photo-grid img:hover {
+    transform: scale(1.1);
+    /* Scale image on hover */
+}
+
+.enlarged-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Semi-transparent black background */
+    display: none;
+    /* Initially hidden */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    /* Ensure it's on top of everything */
+}
+
+.enlarged-image img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+}
+
+form input,
+textarea {
+    padding: 15px;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: hsla(260, 100%, 44%, 0.1);
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+form input::placeholder,
+textarea::placeholder {
+    color: var(--text-color);
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.contact-button {
+    width: 160px;
+    cursor: pointer;
+    background: #2768d9;
+    color: #fff;
+    justify-content: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 35%;
+}
+
+.contact-button:hover {
+    background: var(--hover);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+}
+
+.social-links img {
+    width: 100px;
+    /* Set a fixed width */
+    height: 100px;
+    /* Set a fixed height */
+    object-fit: cover;
+    /* Ensure the image covers the specified dimensions */
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    /* Blue border color */
+    transition: border-color 0.3s ease;
+}
+
+.social-links img:hover {
+    border-color: #0056b3;
+    /* Darker blue on hover */
+}
+
+
+/* Style for the meal planner section */
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Skills Section */
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.skills-img img {
+    width: 80%;
+    padding-left: 4rem;
+    object-position: center;
+}
+
+.bars-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.bars-box h3,
+span {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.light-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.5rem;
+    background: hsla(260, 100%, 44%, 0.4);
+    border-radius: 0.5rem;
+}
+
+.percent-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.5rem;
+    background: var(--main-color);
+    border-radius: 0.5rem;
+}
+
+.html-bar {
+    width: 94%;
+}
+
+.css-bar {
+    width: 84%;
+}
+
+.js-bar {
+    width: 45%;
+}
+
+.react-bar {
+    width: 30%;
+}
+
+
+/* Hobbies Section */
+
+#hobbies {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+}
+
+#hobbies .heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-bottom: 30px;
+}
+
+#hobbies ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+#hobbies ul li {
+    color: var(--black);
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#hobbies ul li:before {
+    content: '\2022';
+    color: var(--main-color);
+    font-size: 1.6rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

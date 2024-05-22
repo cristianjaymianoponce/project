@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--custom css link-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Header Section-->
+    <header class="header">
+        <a href="#" class="logo">My Personal Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About me</a>
+            <a href="#education">My Education</a>
+            <a href="#photo">My Photos</a>
+            <a href="#skills">My Skills</a>
+            <a href="#hobbies">My Hobbies</a>
+            <a href="#contact">Contact Me </a>
+        </nav>
+
+        <div class="fas fa-bars" id="menu"></div>
+
+    </header>
+    <!--header section ends-->
+    <!--home section starts-->
+    <section class="home" id="home">
+        <div class="content">
+            
+            <h3 class="heading">Portfolio Project</h3>
+            <h3>in ITE 6- Application Development and Emerging Technologies</h3>
+        </div>
+        
+    </section>
+    <!--home section end-->
+    <!--about section start-->
+    <section class="about" id="about">
+        <h3 class="heading">About Myself</h3>
+        <div class="row">
+            <div class="content">
+                <p>Name: Cristian Jay Miano Ponce.</p>
+                <p>Age: 27 years young.</p>
+                <p>Birthday: December 29 1997.</p>
+                <p>Name of Mother: Rosana Morfe.</p>
+                <p>Name of Father: Narciso Ponce.</p>
+                <p>Name of Sister: Thalia jane M. Ponce.</p>
+                <p>Home Address: Brgy. Tarabucan, Oquendo Destrict, Calbayog City.</p>
+                <p>Current Address: Brgy. Dagum, Fulgencio Subd. Calbayog City.</p>
+                <p>Motto: "At the end of the day, Gabi na!"</p>
+            </div>
+            <div class="video">
+                <video id="about-video" controls width="600" height="400">
+                    <source src="video/VID20240522203851.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+    <!--about section end-->
+    <!--education section Start-->
+    <section class="education" id="education">
+
+        <h1 class="heading">Education</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <div class="icon">
+
+                    <img src="image/TNHS-logo.jpg" alt="" />
+
+                </div>
+
+                <div class="content">
+
+                    <h3>My Educational Journey</h3>
+                    <div class="line"></div>
+                    <div class="box">
+                        <img src="image/ghandi-icon.jpg" alt="" />
+                        
+                        <p>“Live as if you were to die tomorrow. Learn as if you were to live forever.”
+                        ― Mahatma Gandhi</p>
+                    </div>
+                    <div class="box">
+                        <img src="image/nelson logo.jpg" alt="" />
+                        
+                        <p>“Education is the most powerful weapon which you can use to change the world.”
+                            ― Nelson Mandela</p>
+                    </div>
+                    
+                    <ul>
+                        <div class="box">
+                        <li><i class="fas fa-check"></i>My educational journey starts in primary school the "Tarabucan Central Elementary School" it was year (2004-2010)</li>
+                        </div>
+                        <div class="box">
+                        <li><i class="fas fa-check"></i>Then proceded to my secondary which is the "Tarabucan national High School" (2012-2014)</li>
+                        </div>
+                        <div class="box">
+                        <li><i class="fas fa-check"></i>However becuase my father passed away during grade 8, I decided to Transfer from TNHS to Calbayog City Night High School and proceed until i beacome a senior high student.(2015-2017).</li>
+                        </div>
+                        <div class="box">
+                        <li><i class="fas fa-check"></i>Then, became a sior high school student at Calbayog City National High School(2017-2018)</li>
+                        </div>
+                        <div class="box">
+                        <li><i class="fas fa-check"></i>Year 2019 is when i passed the examination in NorthWest Samar State University. Here I was enrolled in the college of Education as a BSED-Science. It was an amazing two years of my life because i have met some good friends, but as the year 2020 comes, life  becomes hader for it was the year where COVID19-Pandemic spread accross the world, changing the life of everyone. </li>
+                        </div>
+                        <div class="box">
+                        <li><i class="fas fa-check"></i>That time I was really struggling, though our class is online, there are still problems like: Lack of Food, Internet connections, limited space for my study. year 2022, and i was already at the second semester that time when i'm having stress, and i don't know what to do, I told my mother that i need to take a break, then I did not attend to every online class. until my classmates become 4th year, that time i realized how regretful i was for not trying to continue.</li>
+                        </div>
+                        <div class="box">
+                        <li><i class="fas fa-check"></i>Year 2023-2024, I shifted from COED to CCIS as BS Informaation Technology student. I can say that it is not really eassy to programming because just by looking at those errors make my brain crazy hahah. But all I can say is that "KAKAYANON KO PARA KAN MAMA!". I hope to graduate from this college and become a better programmer in the future.</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--education section end-->
+    <!--photo section start-->
+    <section class="photo" id="photo">
+        <!-- Your content for photos page -->
+        <h2>My Photos</h2>
+        <!-- Grid layout for photos -->
+        <div class="photo-grid">
+            <div><img src="image/1.jpg" alt="Photo 1" onclick="showImage(this.src)"></div>
+            <div><img src="image/2.jpg" alt="Photo 2" onclick="showImage(this.src)"></div>
+            <div><img src="image/3.jpg" alt="Photo 3" onclick="showImage(this.src)"></div>
+            <div><img src="image/4.jpg" alt="Photo 4" onclick="showImage(this.src)"></div>
+            <div><img src="image/5.jpg" alt="Photo 5" onclick="showImage(this.src)"></div>
+            <div><img src="image/6.jpg" alt="Photo 6" onclick="showImage(this.src)"></div>
+            <div><img src="image/7.jpg" alt="Photo 7" onclick="showImage(this.src)"></div>
+            <div><img src="image/8.jpg" alt="Photo 8" onclick="showImage(this.src)"></div>
+            <div><img src="image/9.jpg" alt="Photo 9" onclick="showImage(this.src)"></div>
+            <div><img src="image/10.jpg" alt="Photo 10" onclick="showImage(this.src)"></div>
+            <div><img src="image/11.jpg" alt="Photo 11" onclick="showImage(this.src)"></div>
+            <div><img src="image/12.jpg" alt="Photo 12" onclick="showImage(this.src)"></div>
+            <div><img src="image/13.jpg" alt="Photo 13" onclick="showImage(this.src)"></div>
+            <div><img src="image/14.jpg" alt="Photo 14" onclick="showImage(this.src)"></div>
+            <div><img src="image/15.jpg" alt="Photo 15" onclick="showImage(this.src)"></div>
+            <div><img src="image/16.jpg" alt="Photo 16" onclick="showImage(this.src)"></div>
+            <div><img src="image/17.jpg" alt="Photo 17" onclick="showImage(this.src)"></div>
+    </section>
+
+    <!--photo section end-->
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="heading">
+            <h2>My Skills</h2>
+        </div>
+        <!-- Skills Content -->
+        <div class="skills-container">
+            <div class="bars">
+                <!-- Box 1 -->
+                <div class="bars-box">
+                    <h3>HTML</h3>
+                    <span>94%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar html-bar"></div>
+                </div>
+                <!-- Box 2 -->
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>84%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+                <!-- Box 3 -->
+                <div class="bars-box">
+                    <h3>JavaScript</h3>
+                    <span>45%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+                <!-- Box 4 -->
+                <div class="bars-box">
+                    <h3>React</h3>
+                    <span>30%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+            </div>
+            <div class="skills-img">
+                <img src="/image/opo.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <div class="content">
+            <div class="heading">
+            <h2>My Hobbies</h2>
+        </div>
+        <ul>
+            <li>I love Cooking.</li>
+            <li>Reading Manga and Wattpad.</li>
+            <li>Playing mobile games like Mobile Legends</li>
+            <li>Watching K-Drama and BL Series.</li>
+            <li>I love to Travel.</li>
+        </ul>
+    </section>
+
+    
+    <br />
+
+
+
+
+    <footer>
+        
+        <section class="contact" id="contact">
+            <div class="content">
+                <div class="heading">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Your Name">
+                    <input type="email" name="" id="" placeholder="Your Email">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..."></textarea>
+                    <input type="button" value="Send" class="contact-button">
+                </form>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/cristianjay.ponce" target="_blank">
+                        <img src="image/17.jpg" alt="Cristian">
+                    </a>
+                </div>
+            </div>
+        <p>Cristian jay Ponce</p>
+        <br>
+        <p>&copy; 2024-My Portfolio.</p>
+        </section>
+
+    </footer>
+
+
+
+    <!--jquery cdn link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--custom js link-->
+    <script src="script.js"></script>
+
+</body>
+</html>
